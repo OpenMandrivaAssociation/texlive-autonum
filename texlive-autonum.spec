@@ -1,11 +1,11 @@
-# revision 27224
+# revision 30979
 # category Package
 # catalog-ctan /macros/latex/contrib/autonum
-# catalog-date 2012-07-08 14:35:29 +0200
+# catalog-date 2013-06-16 02:32:49 +0200
 # catalog-license lppl1.3
-# catalog-version 0.2
+# catalog-version 0.3.5
 Name:		texlive-autonum
-Version:	0.2
+Version:	0.3.5
 Release:	1
 Summary:	Automatic equation references
 Group:		Publishing
@@ -38,6 +38,7 @@ to the showonlyrefs option of the package mathtools.
 %doc %{_texmfdistdir}/doc/latex/autonum/README
 %doc %{_texmfdistdir}/doc/latex/autonum/autonum.pdf
 %doc %{_texmfdistdir}/doc/latex/autonum/test-autonum.pdf
+%doc %{_texmfdistdir}/doc/latex/autonum/test-autonum.tex
 #- source
 %doc %{_texmfdistdir}/source/latex/autonum/autonum.dtx
 %doc %{_texmfdistdir}/source/latex/autonum/autonum.ins
@@ -51,11 +52,3 @@ to the showonlyrefs option of the package mathtools.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Thu Aug 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.2-1
-+ Revision: 813395
-- Import texlive-autonum
-- Import texlive-autonum
-
