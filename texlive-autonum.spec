@@ -1,11 +1,11 @@
-# revision 30979
+# revision 32126
 # category Package
 # catalog-ctan /macros/latex/contrib/autonum
-# catalog-date 2013-06-16 02:32:49 +0200
+# catalog-date 2013-11-11 00:18:00 +0100
 # catalog-license lppl1.3
-# catalog-version 0.3.5
+# catalog-version 0.3.7
 Name:		texlive-autonum
-Version:	0.3.5
+Version:	0.3.7
 Release:	1
 Summary:	Automatic equation references
 Group:		Publishing
