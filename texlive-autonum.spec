@@ -6,7 +6,7 @@
 # catalog-version 0.3.7
 Name:		texlive-autonum
 Version:	0.3.7
-Release:	4
+Release:	5
 Summary:	Automatic equation references
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/autonum
