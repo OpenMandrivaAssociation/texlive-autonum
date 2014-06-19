@@ -1,12 +1,12 @@
-# revision 32126
+# revision 33438
 # category Package
 # catalog-ctan /macros/latex/contrib/autonum
-# catalog-date 2013-11-11 00:18:00 +0100
+# catalog-date 2014-04-14 19:46:34 +0200
 # catalog-license lppl1.3
-# catalog-version 0.3.7
+# catalog-version 0.3.8
 Name:		texlive-autonum
-Version:	0.3.7
-Release:	6
+Version:	0.3.8
+Release:	1
 Summary:	Automatic equation references
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/autonum
@@ -39,6 +39,7 @@ to the showonlyrefs option of the package mathtools.
 %doc %{_texmfdistdir}/doc/latex/autonum/autonum.pdf
 %doc %{_texmfdistdir}/doc/latex/autonum/test-autonum.pdf
 %doc %{_texmfdistdir}/doc/latex/autonum/test-autonum.tex
+%doc %{_texmfdistdir}/doc/latex/autonum/test-freeze.tex
 #- source
 %doc %{_texmfdistdir}/source/latex/autonum/autonum.dtx
 %doc %{_texmfdistdir}/source/latex/autonum/autonum.ins
