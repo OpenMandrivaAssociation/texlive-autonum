@@ -1,19 +1,13 @@
-# revision 33438
-# category Package
-# catalog-ctan /macros/latex/contrib/autonum
-# catalog-date 2014-04-14 19:46:34 +0200
-# catalog-license lppl1.3
-# catalog-version 0.3.8
 Name:		texlive-autonum
-Version:	0.3.11
-Release:	3
+Version:	36084
+Release:	1
 Summary:	Automatic equation references
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/autonum
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/autonum.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/autonum.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/autonum.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/autonum.r36084.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/autonum.doc.r36084.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/autonum.source.r36084.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,12 +19,12 @@ those equations that are referenced. This operation is similar
 to the showonlyrefs option of the package mathtools.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -46,7 +40,8 @@ to the showonlyrefs option of the package mathtools.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
